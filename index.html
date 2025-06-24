@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo Flipbook</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>      
+        <div id="logo">
+          <h1 class="titulo-arriba">Destilería</h1>
+        <div class="logo-img">
+            <img class="img" src="img\logo.png" alt="Escudo Casa Mixteca" >
+        </div>
+          <svg viewBox="0 100 390 50" preserveAspectRatio="xMidYMid meet" class="titulo-abajo">
+            <defs>
+              <path id="arco-abajo" d="M 100,50 A 200,150 0 0,0 340,50" fill="none"/>
+            </defs>
+            <text>
+              <textPath href="#arco-abajo" startOffset="50%" text-anchor="middle">
+                Casa Mixteca
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      
+        <h2>Tradición y Familia</h2>
+        <!-- <nav id="menu"></nav> -->
+    </header>
+
+  <main>
+    <div class="container">
+      <div class="flip-book" id="demoBookExample">
+        <!-- Portada inicial -->
+        <div class="page page-cover portada-inicio" data-density="hard">
+          <div class="page-content portada">
+            <!--<img src="img\\fotos -SV-033.jpg" class="portada-fondo" alt="Fondo portada">-->
+            <div class="texto-portada">
+              <h2>CATÁLOGO DE PRODUCTOS</h2>
+              <p>Descubre nuestra selección artesanal</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Las fichas se cargarán dinámicamente aquí -->
+
+        <!-- Contraportada -->
+        <div class="page page-cover portada-fin" data-density="hard">
+          <div class="page-content portada-fin">
+            <!--<img src="img\\img2.jpg" alt="portada_fin">-->
+            <div class="texto-portada">
+              <h2>Gracias por visitarnos</h2>
+              <p>¡Te esperamos pronto!</p>
+              <p>Contacto: <a href="tel:+52 249 127 39 20">+52 249 127 39 20</a></p>
+              <p>Síguenos en <a href="https://www.instagram.com/destileria.casamixteca?igsh=MTdvM2w1eHp2MmNodA%3D%3D&utm_source=qr " target="_blank">@destileria.casamixteca</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <!-- Botones de Navegación -->
+    <div class="navegacion">
+      <button type="button" class="btn-prev">◀ Anterior</button>
+      <span class="contador"><span class="page-current">1</span> de <span class="page-total">-</span></span>
+      <button type="button" class="btn-next">Siguiente ▶</button>
+    </div>
+  
+
+  <script src="libs/page-flip.browser.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
